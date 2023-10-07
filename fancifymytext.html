@@ -1,0 +1,42 @@
+<!--Name: Eduardo Mariano-->
+<!--Date: Oct 6, 2023-->
+<!--Class: CSC 193A-->
+<!--Assignment 5-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src="fancifymytext.js" type="text/javascript"></script>
+		
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		
+		<!-- Your UI controls go here -->
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id= "userinput" rows= "4" cols="30"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Fancify</legend>
+			<button onclick= "modifyFontsize()">Bigger!</button>
+
+			<br>
+			<input id="Fancy" type= "radio" id= "FancyShmancy" name="font" onchange= "modifyFont()" value="FancyShmancy" /> 
+			<label for = "FancyShmancy">FancyShmancy</label> 
+
+			<br>
+			<input id="Boring" type= "radio" id= "Boring Betty" name="font" onchange= "modifyFont()" value="Boring Betty" /> 
+			<label for= "Boring Betty">Boring Betty</label> 
+			<br>
+
+			<button onclick="modifyText()">Moo</button>
+		</fieldset>
+
+	</body>
+</html>
